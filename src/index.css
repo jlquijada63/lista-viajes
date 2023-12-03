@@ -7,9 +7,23 @@ const initialItems = [
 
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
+:root{
+
+	/* colors */
+
+	--color-light-orange:  #f4a226;
+	--color-dark-orange: #ea580c;
+	--color-green: #0d9488;
+	--color-light-beige: #fef3c7;
+	--color-brown: #422006;
+	--color-red: red;
+	
+}
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+	font-family: 'Quicksand', sans-serif;
 }
 *,
 *:before,
