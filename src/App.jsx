@@ -19,7 +19,7 @@ function App() {
 	return (
 		<div>
 			<Logo />
-      <Form />
+      <Form setItems={setItems}  items={items}/>
 			<PackingList items={items}/>
 			<Stats />
 		</div>
