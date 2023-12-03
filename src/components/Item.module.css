@@ -25,6 +25,10 @@
 .icon {
   font-size: 2.5rem;
   color: var(--color-red);
-  
+  cursor: pointer;
   font-weight: 700;
+}
+
+.descriptionCheck {
+  text-decoration: line-through;
 }
