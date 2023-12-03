@@ -19,7 +19,7 @@ function Form({ setItems, items }) {
 	return (
 		<div className={styles.formContainer}>
 			<form onSubmit={handleSubmit}>
-				<label className={styles.label}>What do you need for your 😜 trip ? </label>
+				<label className={styles.label}>¿Que necesitas para el 😜 viaje? </label>
 				<input
 					className={styles.count}
 					type="number"
@@ -34,7 +34,7 @@ function Form({ setItems, items }) {
 					value={descriptionValue}
 					onChange={e => setDescriptionValue(e.target.value)}
 				/>
-				<button className={styles.add}>ADD</button>
+				<button className={styles.add}>AÑADIR</button>
 			</form>
 		</div>
 	)

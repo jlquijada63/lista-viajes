@@ -8,7 +8,7 @@ function Stats({items}) {
 	return (
 		<div className={styles.statsContainer}>
 			<p>
-				🧳You have <span>{items.length}</span> items in your list, and you already packed{" "}
+				🧳Tienes <span>{items.length}</span> articulos en tu list, y tienes en la maleta {" "}
 				<span>{packedItems.length}</span>
 				<span>{` (${((packedItems.length / items.length) * 100).toFixed(0)}%)`}</span>
 			</p>

@@ -1,13 +1,19 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import Item from "./Item"
 import styles from "./PackingList.module.css"
+import Modal from "./Modal"
+import { useState } from "react"
+
 
 function PackingList({ items, setItems }) {
+
+	const [isModal, setIsModal] = useState(false)
 
 
 	const handleChange = (e) => { 
 
 		// sort by input order
-		console.log(e.target.value)
+	
 		const sortedArray = [...items]
 
 		if (e.target.value === "byInput") {
@@ -23,7 +29,7 @@ function PackingList({ items, setItems }) {
 				}
 				return 0
 			})
-			console.log(sortedArray)
+			
 			setItems(sortedArray)
 			
 		}else{
@@ -32,10 +38,12 @@ function PackingList({ items, setItems }) {
 		}
 	}
 
-	const handleClearClick = () => { 
+	// borra la lista
+	// const handleClearClick = () => { 
 		
-		setItems([])
-	 }
+	// 	setItems([])
+	//  // eslint-disable-next-line no-mixed-spaces-and-tabs
+	//  }
 
 
 
@@ -53,12 +61,14 @@ function PackingList({ items, setItems }) {
 			</div>
 			<div className={styles.btnContainer}>
 				<select className={styles.selectBtn} onChange={handleChange}>
-					<option value="byInput">SORT BY INPUT ORDER</option>
-					<option value="byDescription">SORT BY DESCRIPTION</option>
-					<option value="byPackedStatus">SORT BY PACKED STATUS</option>
+					<option value="byInput">ORDENAR POR ORDEN DE ENTRADA</option>
+					<option value="byDescription">ORDENAR POR ARTICULO</option>
+					<option value="byPackedStatus">ORDENAR POR SI ESTA EN LA MALETA O NO</option>
 				</select>
-				<button className={styles.clearBtn} onClick={handleClearClick}>CLEAR LIST</button>
+				<button className={styles.clearBtn} onClick={() => setIsModal(true)}>BORRAR LA LISTA</button>
+				{isModal && <Modal setIsModal = {setIsModal} setItems={setItems}/>}
 			</div>
+			
 		</div>
 	)
 }
