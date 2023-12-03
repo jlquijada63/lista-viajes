@@ -7,30 +7,28 @@ const initialItems = [
 
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
-:root{
-
+:root {
 	/* colors */
 
-	--color-light-orange:  #f4a226;
+	--color-light-orange: #f4a226;
 	--color-dark-orange: #ea580c;
 	--color-green: #0d9488;
 	--color-light-beige: #fef3c7;
 	--color-brown: #422006;
 	--color-red: red;
-	
 }
 
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 body {
 	font-family: sans-serif;
@@ -42,7 +40,6 @@ body {
 .container {
 	max-width: 120rem;
 	width: 90%;
-	margin: 0 auto;
+	margin: 15vh auto;
+	box-shadow: 3px 3px 30px rgba(20,20,20, .5);
 }
-
-

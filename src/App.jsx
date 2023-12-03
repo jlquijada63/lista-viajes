@@ -21,7 +21,7 @@ function App() {
 	const [items, setItems] = useState(initialItems)
 
 	return (
-		<div>
+		<div className="container">
 			<Logo />
       <Form setItems={setItems}  items={items}/>
 			<PackingList items={items} setItems={setItems} />

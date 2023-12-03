@@ -1,15 +1,13 @@
 
 
 .itemContainer {
-
+  width: 20rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
   font-size: 2rem;
   color: var(--color-light-beige);
-
-
+  gap: 1rem
 
 
 }

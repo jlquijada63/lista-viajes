@@ -32,6 +32,7 @@ function Form({ setItems, items }) {
 					type="text"
 					name="description"
 					value={descriptionValue}
+					placeholder="Introduce articulo"
 					onChange={e => setDescriptionValue(e.target.value)}
 				/>
 				<button className={styles.add}>AÑADIR</button>
