@@ -43,7 +43,7 @@
                         <mxPoint x="640" y="300" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="Label" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="15" connectable="0" vertex="1">
+                <mxCell id="16" value="items" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="15" connectable="0" vertex="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="" style="endArrow=classic;html=1;" parent="1" edge="1">

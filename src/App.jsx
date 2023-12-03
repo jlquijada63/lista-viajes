@@ -25,7 +25,7 @@ function App() {
 			<Logo />
       <Form setItems={setItems}  items={items}/>
 			<PackingList items={items} setItems={setItems} />
-			<Stats />
+			<Stats items={items}/>
 		</div>
 	)
 }
