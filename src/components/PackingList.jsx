@@ -32,6 +32,11 @@ function PackingList({ items, setItems }) {
 		}
 	}
 
+	const handleClearClick = () => { 
+		
+		setItems([])
+	 }
+
 
 
 	return (
@@ -52,7 +57,7 @@ function PackingList({ items, setItems }) {
 					<option value="byDescription">SORT BY DESCRIPTION</option>
 					<option value="byPackedStatus">SORT BY PACKED STATUS</option>
 				</select>
-				<button className={styles.clearBtn}>CLEAR LIST</button>
+				<button className={styles.clearBtn} onClick={handleClearClick}>CLEAR LIST</button>
 			</div>
 		</div>
 	)
