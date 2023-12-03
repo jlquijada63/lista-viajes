@@ -21,6 +21,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 
+  gap: 2rem;
+  margin-bottom: 2rem;
 
+
+}
+
+.selectBtn, .clearBtn {
+  background-color: var(--color-light-beige);
+  padding: .5rem 1rem;
+  border-radius: 5rem;
+  
 }
