@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import styles from "./Form.module.css"
 
 function Form({ setItems, items }) {
 	const [quantityValue, setQuantityValue] = useState("")
 	const [descriptionValue, setDescriptionValue] = useState("")
+	const miInputRef = useRef(null)
 
 	const handleSubmit = e => {
 		e.preventDefault()
@@ -14,6 +15,10 @@ function Form({ setItems, items }) {
       packed: false
 		}
     setItems(prev => [...prev, newItem])
+		setQuantityValue("")
+		setDescriptionValue("")
+		miInputRef.current.focus()
+
 	}
 
 	return (
@@ -26,6 +31,8 @@ function Form({ setItems, items }) {
 					name="quantity"
 					value={quantityValue}
 					onChange={e => setQuantityValue(e.target.value)}
+					ref={miInputRef}
+				
 				/>
 				<input
 					className={styles.article}
